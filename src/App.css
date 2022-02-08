@@ -1,0 +1,113 @@
+/* Fonts */
+
+h1{ /* Halogen Bold */
+    font-family: halogen, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.boldHeader{
+    text-transform: uppercase;
+}
+h2 /* Halogen Regular */ {
+    font-family: halogen, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lightBody{ /* Termina Light */
+    font-family: termina,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.bodyText, p , .navigation { /* Termina Regular */
+    font-family: termina,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Used for all */
+html, body {
+  overflow-x: hidden;
+}
+.parallax {
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home, html {
+    background-color: #FDFDFD;
+}
+body{
+    -webkit-text-size-adjust: none; 
+}
+.defaultTextBody{
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+    font-size: 1.4em;
+    overflow-wrap: break-word;
+}
+
+Container{
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+}
+
+.customLinkCSS{
+    color: #0b0b0a;
+}
+.customLinkCSS:hover{
+    color: #3f4d25;
+}
+
+Row, .scrollContent  {
+    width: "100vw";
+    overflow: "hidden";
+}
+
+/* Sections */ 
+
+/* Intro Assets */ 
+
+#introSection{
+    height: 80vh;
+    background-color: aliceblue;
+}
+#fullName, #dda{
+    line-height: 22%;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #DDE41A;
+    position: absolute;
+    
+}
+#fullName {
+    font-size: 12vh;
+}
+
+#dda{
+    font-size: 5vh;
+}
+#home_pic {
+    position: absolute;
+    width: 33vw;
+    height: 80vh;
+    left: 59.5%;
+    top: 20%;
+    background-image: url(/src/assets/background_image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* About Assets */ 
+
+#aboutSection{
+  background-color: #878741;
+  z-index: 1;
+}
+.aboutText{
+    color: #F3EFE2;
+}
