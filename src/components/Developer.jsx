@@ -1,12 +1,28 @@
 import React from "react";
 import "../App.css";
+import { Container, Row, Col } from "react-bootstrap"; 
 
 function Developer() {
     return (
-        <div className="artist">
-            <div className="scrollContent" style={{ width: "100vw", overflow: "hidden" }}>
+        <div className="developer">
+            <div className="scrollContent">
                 <div className="parallax">
-                    <p> this is the developer page </p>
+                    <Container>
+                        <Row>
+                            <div className="rowType2"> </div>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <div className="rowType2"> </div>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <div className="rowType2"> </div>
+                        </Row>
+                        <Row>
+                            <div className="rowType2"> </div>
+                        </Row>
+                    </Container>
                 </div>
             </div>
         </div>

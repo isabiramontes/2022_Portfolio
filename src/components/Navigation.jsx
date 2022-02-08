@@ -6,10 +6,10 @@ import "../App.css"
 function Navigation() {
     return (
         <div className="navigation" style={{ width: "100vw" }}>
-            <Container className="navContainer">
-                <Nav className="d-flex justify-content-between" activeKey="/home">
+            <Container className="navContainer" >
+                <Nav className="d-flex justify-content-between bg-transparent" activeKey="/home">
                     <Nav.Item>
-                        <NavLink className="nav-link" to="/home" style={{ color: "#DDE41A" }}> home </NavLink>
+                        <NavLink className="nav-link" to="/home" style={{ color: "#DDE41A"}}> home </NavLink>
                     </Nav.Item>
                     <Nav.Item>
                         <NavLink className="nav-link" to="/developer" style={{ color: "#DDE41A" }}> developer </NavLink>
