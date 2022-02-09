@@ -1,7 +1,7 @@
 /* Used for all */
     /* Fonts */
 
-    h1{ /* Halogen Bold */
+    h1, h3{ /* Halogen Bold */
         font-family: halogen, sans-serif;
         font-weight: 700 !important;
         font-style: normal;
@@ -18,7 +18,11 @@
         font-family: termina,sans-serif;
         font-weight: 400;
         font-style: normal;
-        color: #DDE41A;
+        color: #fdfdfd;
+    }
+
+    h3 {
+        color: #fdfdfd;
     }
     
     /* Other Assets */
@@ -48,11 +52,6 @@
             letter-spacing: -0.015em;
             font-size: 1.4em;
             overflow-wrap: break-word;
-        }
-        Container{
-            margin-left: 0;
-            margin-right: 0;
-            overflow: hidden;
         }
         .navigation{
             font-size: 2.8vh;     
@@ -87,21 +86,42 @@
 
     /* Gallery Assets */ 
     #gallerySection{
-        color: #F3EFE2;
+        background-color: #1c1c1c;
+        padding-top: 12vh;
+        padding-bottom: 12vh;
     }
-    .rowType2{
-        position: absolute;
-        background: #624FC2;
-        height: 60vh;
-        width: 70vw;
+    .wideImgTop, .wideImgBottom, .narrowImg, .narrowImg2, .singleImg{
+        background-color: #624FC2;
+    }
+    .wideImgTop, .wideImgBottom{
+        height: 32vh;
+    }
+    .wideImgTop{
+        float: inline-start;
+        margin-bottom: 6vh;
+    }
+    .wideImgBottom{
+        float: inline-end;
+    }   
+    .narrowImg, .narrowImg2, .singleImg{
+        height: 70vh;    
+    }
+    .narrowImg{
+        margin-left: 4vh;
+    }
+    .narrowImg2{
+        margin-right: 4vh;
+    }
+
+    #aboutImg{
+        background: url(assets/about_image.jpg) no-repeat center;
+        background-size: cover;
+
     }
 
      /* Contact / About Assets, z-index: 1; */ 
-
-    #aboutContactSection { 
+    #aboutContactSection {
         background-color: #1c1c1c;
+        padding-top: 12vh;
+        padding-bottom: 12vh;
     }
-    .aboutText{
-        color: #F3EFE2;
-    }
-
