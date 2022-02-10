@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import { Container, Row, Col, Form } from "react-bootstrap"; 
+import { Container, Row, Col, Form, Button } from "react-bootstrap"; 
 
 function Home() {
     return (
@@ -58,19 +58,41 @@ function Home() {
                                     </p>
                                 </Col>
                                 <Col className="wideImgCol" sm={7} md={7} lg={7}>
-                                    <h3> Name</h3>
-                                    
-                                    <Form>
-                                        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                                            <Form.Label>Email address</Form.Label>
-                                            <Form.Control type="email" placeholder="name@example.com" />
+                                    <Form action="https://formspree.io/f/mvoveogg" method="POST">
+                                        <Form.Group className="mb-2" controlId="contactForm.ControlInput1">
+                                            <h3 className="required"> Name</h3>
+                                            <Form.Control type="text" name="first_name" placeholder="First"/>
+                                            <Form.Control type="text" name="last_name" placeholder="Last" />
                                         </Form.Group>
-                                        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                            <Form.Label>Example textarea</Form.Label>
-                                            <Form.Control as="textarea" rows={3} />
-                                        </Form.Group>
+                                            <Form.Group className="mb-2" controlId="contactForm.ControlInput1">
+                                                <h3 className="required"> Pronouns </h3>
+                                            <Form.Control type="text" name="pronouns" placeholder="ex: they/them, ze/zir, he/him" required />
+                                            </Form.Group>
+                                            <Form.Group className="mb-2" controlId="contactForm.ControlInput1">
+                                                <h3 className="required">Email</h3>
+                                            <Form.Control type="email" name="_replyto" placeholder="name@example.com" />
+                                            </Form.Group>
+                                            <Form.Group className="mb-2" controlId="contactForm.ControlTextarea1">
+                                                <h3 className="required">Message</h3>
+                                            <Form.Control as="textArea" name="message" rows={8} />
+                                            </Form.Group>
+                                            <Form.Group className="mb-8" controlId="contactForm.ControlInput1">
+                                                <h3>Terms of Service</h3>
+                                                <p>This form is exclusively for professional inquiries. For personal inquiries, please contact them on social media.</p>
+                                                {['checkbox'].map((type) => (
+                                                    <div key={`IAccept-${type}`} className="mb-2">
+                                                        <Form.Check
+                                                            label={`I Accept`}
+                                                            type={type}
+                                                            id={`${type}`}
+                                                        />
+                                                    </div>
+                                                ))}
+                                            </Form.Group>
+                                            <Button variant="primary" type="submit">
+                                                Submit
+                                            </Button>
                                     </Form>
-                                    <div className="wideImgBottom" />
                                 </Col>
                             </Row>
                         </Container>
