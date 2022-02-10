@@ -61,20 +61,20 @@ function Home() {
                                     <Form action="https://formspree.io/f/mvoveogg" method="POST">
                                         <Form.Group className="mb-2" controlId="contactForm.ControlInput1">
                                             <h3 className="required"> Name</h3>
-                                            <Form.Control type="text" name="first_name" placeholder="First"/>
-                                            <Form.Control type="text" name="last_name" placeholder="Last" />
+                                            <Form.Control type="text" name="first_name" required placeholder="First"/>
+                                            <Form.Control type="text" name="last_name" required placeholder="Last" />
                                         </Form.Group>
                                             <Form.Group className="mb-2" controlId="contactForm.ControlInput1">
                                                 <h3 className="required"> Pronouns </h3>
-                                            <Form.Control type="text" name="pronouns" placeholder="ex: they/them, ze/zir, he/him" required />
+                                            <Form.Control type="text" name="pronouns" required placeholder="ex: they/them, ze/zir, he/him" />
                                             </Form.Group>
                                             <Form.Group className="mb-2" controlId="contactForm.ControlInput1">
                                                 <h3 className="required">Email</h3>
-                                            <Form.Control type="email" name="_replyto" placeholder="name@example.com" />
+                                            <Form.Control type="email" name="_replyto" required placeholder="name@example.com" />
                                             </Form.Group>
                                             <Form.Group className="mb-2" controlId="contactForm.ControlTextarea1">
                                                 <h3 className="required">Message</h3>
-                                            <Form.Control as="textArea" name="message" rows={8} />
+                                            <Form.Control as="textArea" name="message" required rows={8} />
                                             </Form.Group>
                                             <Form.Group className="mb-8" controlId="contactForm.ControlInput1">
                                                 <h3>Terms of Service</h3>
@@ -82,6 +82,7 @@ function Home() {
                                                 {['checkbox'].map((type) => (
                                                     <div key={`IAccept-${type}`} className="mb-2">
                                                         <Form.Check
+                                                            required
                                                             label={`I Accept`}
                                                             type={type}
                                                             id={`${type}`}

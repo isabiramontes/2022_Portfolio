@@ -1,14 +1,15 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 
 function Footer() {
     return (
         <div className="footer">
             <footer class="py-5 bg-dark fixed-bottom">
-                <div class="container">
+                <Container className="navContainer" style={{ width: "100vw" }}>
                     <p class="m-0 text-center text-white">
-                        Copyright &copy; Your Website 2022
+                        &copy; 2022 Isa Biramontes. All rights reserved.
                     </p>
-                </div>
+                </Container>
             </footer>
         </div>
     );
