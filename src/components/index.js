@@ -4,6 +4,7 @@ export { default as Footer } from "./Footer";
 export { default as Developer } from "./Developer"
 export { default as Designer } from "./Designer"
 export { default as Artist } from "./Artist";
+export { default as AboutContact } from "./AboutContact";
 
 
 
